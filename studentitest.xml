@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Entitati>
+    <student ID="11">
+        <Nume>Octavian Trifan</Nume>
+        <Grupa>937</Grupa>
+    </student>
+    <student ID="12">
+        <Nume>Octavian Trifan</Nume>
+        <Grupa>937</Grupa>
+    </student>
+    <student ID="13">
+        <Nume>Octavian Trifan</Nume>
+        <Grupa>937</Grupa>
+    </student>
+    <student ID="-13">
+        <Nume>Octavian Trifan</Nume>
+        <Grupa>937</Grupa>
+    </student>
+</Entitati>
