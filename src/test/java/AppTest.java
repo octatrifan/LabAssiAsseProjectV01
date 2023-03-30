@@ -25,7 +25,7 @@ public class AppTest {
     }
 
     @Test
-    public void testAddStudentCorrect() {
+    public void testAddStudentValidID() {
         initData();
         int result;
         try {
@@ -37,11 +37,83 @@ public class AppTest {
     }
 
     @Test
+    public void testAddStudentInvalidID() {
+        initData();
+        int result;
+        try {
+            result = service.saveStudent("-32", "Octavian Trifan", 937);
+        } catch (Exception ve) {
+            result = 1;
+        }
+        assert (result == 1);
+    }
+
+    @Test
+    public void testAddStudentLowerBoundaryID() {
+        initData();
+        int result;
+        try {
+            result = service.saveStudent("-1", "Octavian Trifan", 937);
+        } catch (Exception ve) {
+            result = 1;
+        }
+        assert (result == 1);
+    }
+
+    @Test
     public void testAddStudentWrongGroup() {
         initData();
         int result;
         try {
             result = service.saveStudent("113", "Octavian Trifan", 999);
+        } catch (Exception ve) {
+            result = 0;
+        }
+        assert (result == 1);
+    }
+
+    @Test
+    public void testAddStudentCorrectGroup() {
+        initData();
+        int result;
+        try {
+            result = service.saveStudent("114", "Octavian Trifan", 932);
+        } catch (Exception ve) {
+            result = 1;
+        }
+        assert (result == 0);
+    }
+
+    @Test
+    public void testAddStudentLowerBoundaryGroup() {
+        initData();
+        int result;
+        try {
+            result = service.saveStudent("113", "Octavian Trifan", 0);
+        } catch (Exception ve) {
+            result = 0;
+        }
+        assert (result == 1);
+    }
+
+    @Test
+    public void testAddStudentUpperBoundaryGroup() {
+        initData();
+        int result;
+        try {
+            result = service.saveStudent("113", "Octavian Trifan", 939);
+        } catch (Exception ve) {
+            result = 0;
+        }
+        assert (result == 1);
+    }
+
+    @Test
+    public void testAddStudentNoName() {
+        initData();
+        int result;
+        try {
+            result = service.saveStudent("113", "", 939);
         } catch (Exception ve) {
             result = 0;
         }
