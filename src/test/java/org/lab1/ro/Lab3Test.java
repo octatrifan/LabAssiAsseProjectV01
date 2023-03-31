@@ -1,3 +1,5 @@
+package org.lab1.ro;
+
 import domain.Tema;
 import org.junit.jupiter.api.Test;
 import repository.*;
