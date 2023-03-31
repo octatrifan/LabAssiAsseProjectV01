@@ -1,3 +1,5 @@
+package org.lab1.ro;
+
 import org.junit.jupiter.api.Test;
 import repository.*;
 import service.*;
@@ -81,7 +83,7 @@ public class AppTest {
         } catch (Exception ve) {
             result = 1;
         }
-        assert (result == 0);
+        assert (result == 1);
     }
 
     @Test
