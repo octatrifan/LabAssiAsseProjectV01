@@ -5,6 +5,11 @@
         <Deadline>7</Deadline>
         <Startline>6</Startline>
     </tema>
+    <tema ID="12">
+        <Descriere>homework1</Descriere>
+        <Deadline>11</Deadline>
+        <Startline>10</Startline>
+    </tema>
     <tema ID="2">
         <Descriere>XML</Descriere>
         <Deadline>8</Deadline>
@@ -14,6 +19,11 @@
         <Descriere>gui</Descriere>
         <Deadline>9</Deadline>
         <Startline>7</Startline>
+    </tema>
+    <tema ID="15">
+        <Descriere>homework1</Descriere>
+        <Deadline>11</Deadline>
+        <Startline>10</Startline>
     </tema>
     <tema ID="7">
         <Descriere>desc</Descriere>

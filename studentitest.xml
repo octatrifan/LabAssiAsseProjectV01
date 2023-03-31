@@ -4,7 +4,15 @@
         <Nume>Octavian Trifan</Nume>
         <Grupa>937</Grupa>
     </student>
+    <student ID="0">
+        <Nume>Octavian Trifan</Nume>
+        <Grupa>937</Grupa>
+    </student>
     <student ID="12">
+        <Nume>Octavian Trifan</Nume>
+        <Grupa>937</Grupa>
+    </student>
+    <student ID="1">
         <Nume>Octavian Trifan</Nume>
         <Grupa>937</Grupa>
     </student>
@@ -12,8 +20,12 @@
         <Nume>Octavian Trifan</Nume>
         <Grupa>937</Grupa>
     </student>
-    <student ID="-13">
+    <student ID="113">
         <Nume>Octavian Trifan</Nume>
-        <Grupa>937</Grupa>
+        <Grupa>932</Grupa>
+    </student>
+    <student ID="114">
+        <Nume>Octavian Trifan</Nume>
+        <Grupa>932</Grupa>
     </student>
 </Entitati>
